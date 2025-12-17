@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    background-image: url(../img/fondo2.web);
+    background-color: rgb(255, 241, 215);
+}
+
+.cap{
+background-color: black;
+height: 80px;
+width: 100%;
+opacity: 90%;
+align-items: center;
+display: flex;
+}
+
+.fijo{
+   position: fixed;
+}
+
+li {
+    width: 10rem;    
+    height: 10rem;
+    border-radius: 50%;
+    background: red;
+    margin: 1rem;
+    float: left;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+
+ul{
+    width: 36rem;
+    margin: auto;
+}
+
+li:hover{
+    opacity: 50%
+}
+
+.top{
+    
+    width: 80px;
+    height: 50px;
+    margin: 0.2rem;
+    font-family: fantasy;
+    color: aliceblue;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+}
+
+.seta{
+    width: 60px;
+    height: 60px;
+    background-size: 100%;
+    float: left;
+    background-image: url(../img/setas.webp);
+}
+
+.top:hover{
+    opacity: 50%;
+}
+
+h1{
+   padding-top: 15rem;
+    font-size: 100px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    padding-bottom: 10rem;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../img/portada.gi);
+    background-size: 100%;
+}
+
+h2{
+    font-size: 60px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    clear: both;
+    padding-bottom: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.texto{
+    height: auto;
+    width: 600px;
+    margin: 50px;
+    display: flex;
+    
+}
+
+.sobremi{
+    justify-content: center; 
+    margin: auto;
+    overflow: hidden;
+    width: 1280px;
+}
+
+.presentacion{
+    width: 600px;
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.foto{
+    width: 640px;
+    height: 20rem; 
+    background-image: url(../img/vane.png) ;
+    background-size: 60%;
+    float: left;
+    background-repeat:no-repeat ;
+    
+}
+
+.habilidades{
+    width: 40rem;
+    height: 12.5rem;
+    padding: 1.25rem;
+    color: white;
+}
+
+.programa{
+    width: 5rem;
+    height: 5rem;
+    margin: 0.188rem;
+    float: left;
+}
+
+.descripcion{
+    float: left;
+    width: 40rem;
+    height: 25rem;
+    background-colr: #b6916b;
+    border-left: -1rem ;
+    border-style: groove;
+    border-color: rgb(0, 0, 0);
+}
+
+.linea1{
+    overflow: hidden;
+}
+
+.linea2{
+    float: left;
+}
+
+.peu{
+    clear: both;
+    margin: center;
+    height: 60px;
+    justify-content: center;
+    text-align: center;
+}
+.app{
+    height: 50px;
+    width: 50px;
+    margin:2px;
+    display: inline-block;
+}
+
+.behance{
+    background-image: url(../img/behance.webp);
+    background-size: 100%;
+}
+
+.artstation{
+background-image: url(../img/artstation.jpg);
+background-size: 100%;
+}
+
+.github{
+background-image: url(../img/github.png);
+background-size: 100%;
+}
+a:link{
+    line-height: 10rem;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(163, 163, 139);
+}
+a:active{
+    color: red;
+}
+a:visited{
+    color: rgb(255, 255, 255);
+}
+.instagram {
+    background-image: url(../img/icono-logotipo-vector-instagram-logotipo-redes-sociales_901408-392.avif);
+    background-size: 100%;
+}
+
+.linkedin{
+    background-image: url(../img/LinkedIn_logo_initials.png.webp);
+    background-size: 100%;
+}
+.p1{
+    background-image: url(../img/Adobe_Photoshop_CC_icon.svg.png);
+    background-size: 100%;
+}
+.p2{
+    background-image: url(../img/Adobe_InDesign_CC_icon.svg.png);
+    background-size: 100%;
+}
+.p3{
+    background-image: url(../img/Adobe_Illustrator_CC_icon.svg.png);
+    background-size: 100%;
+}
+.p4{
+    background-image: url(../img/adobe-substance-3d-painter-icon-app-logo-editable-transparent-background-premium-social-media-design-for-digital-download-free-png.png);
+    background-size: 00%;
+}
+.p5{
+    background-image: url(../img/Adobe_After_Effects_CC_icon.svg.png);
+    background-size: 100%;
+}
+.p6{
+    background-image: url(../img/Adobe_Animate_CC_icon_\(2020\).svg.png);
+    background-size: 100%;
+}
+.p7{
+    background-image: url(../img/Adobe_Photoshop_CC_icon.svg.png);
+    background-size: 100%;
+}
+.p8{
+    background-image: url(../img/Blender_logo_no_text.svg.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.p9{
+    background-image: url(../img/Adobe_Photoshop_CC_icon.svg.png);
+    background-size: 100%;
+}

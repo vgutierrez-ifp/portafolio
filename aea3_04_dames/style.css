@@ -1,0 +1,99 @@
+body{
+
+}
+
+.contenidor {
+    width: 800px;
+    height: 800px;
+    background-color: brown;
+    margin: auto;
+    border: 10px solid rgb(154, 153, 153);
+}
+
+.filera:nth-child(2n){
+    background-color:  white;
+    width: 800px; height: 100px;
+}
+.filera.filera:nth-child(2n+1){
+    background-color: black;
+    width: 800px; height: 100px;
+}
+.casella {
+    width: 80px;
+    height: 80px;
+    background-color: gold;
+    padding: 10px;
+    float: left;
+}
+
+.filera:nth-child(2n) .casella:nth-child(2n){
+    background-image: linear-gradient(45deg, lightgreen, pink);
+}
+.filera:nth-child(2n) .casella:nth-child(2n+1) {
+    background-image: linear-gradient(45deg, violet, lightblue);
+}
+.filera:nth-child(2n+1) .casella:nth-child(2n){
+   background-image: linear-gradient(45deg, violet, lightblue);
+}
+.filera:nth-child(2n+1) .casella:nth-child(2n+1){
+    background-image: linear-gradient(45deg, lightgreen, pink);
+}
+
+.fitxa {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 5px 5px 5px rgb(114, 114, 114);
+}
+.filera:nth-child(2n) .casella:nth-child(2n) .fitxa
+{
+    background-color: black;
+    background-image: radial-gradient(white, lightgrey);
+    
+}
+.filera:nth-child(2n) .casella:nth-child(2n+1) .fitxa
+{
+    background-color: white;
+    background-image: radial-gradient(black, rgb(91, 91, 91));
+}
+.filera:nth-child(2n+1) .casella:nth-child(2n) .fitxa
+{
+   background-color: white;
+   background-image: radial-gradient(black, rgb(91, 91, 91));
+}
+.filera:nth-child(2n+1) .casella:nth-child(2n+1) .fitxa
+{
+    background-color:purple;
+    background-image: radial-gradient(white, lightgrey);
+}
+
+/*
+.filera:nth-child(3) .fitxa,
+.filera:nth-child(4) .fitxa,
+.filera:nth-child(5) .fitxa
+.filera:nth-child(6) .fitxa {
+    display: none;
+}
+*/
+
+.filera:nth-child(n+3):nth-child(-n+6) .fitxa{
+    display: none;
+}
+
+.fitxa{
+    position: relative;
+}
+
+.filera:nth-child(2) .fitxa:hover{
+    top:100px;
+}
+.filera:nth-child(1) .fitxa:hover{
+    top:200px;
+}
+
+.filera:nth-child(7) .fitxa:hover{
+    top: -100px;
+}
+.filera:nth-child(8) .fitxa:hover{
+    top: -200px;
+}
