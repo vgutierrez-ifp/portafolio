@@ -5,17 +5,19 @@
 }
 
 body{
-    background-image: url(../img/fondo2.webp);
-    background-color: rgb(255, 241, 215);
+    background-image: url(../img/fondo2.web);
+    background-color: rgb(255, 255, 255);
+    
 }
 
 .cap{
-background-color: black;
-height: 80px;
+background-color: rgb(0, 0, 0);
+height: 60px;
 width: 100%;
 opacity: 90%;
 align-items: center;
 display: flex;
+z-index: 9999;
 }
 
 .fijo{
@@ -25,15 +27,16 @@ display: flex;
 li {
     width: 10rem;    
     height: 10rem;
-    border-radius: 50%;
-    background: red;
+    border-radius: 30%;
     margin: 1rem;
     float: left;
     list-style-type: none;
     display: flex;
     justify-content: center;
+    font-family: Garamond;
+    color: black;
+    corner-shape:squircle;
 }
-
 
 ul{
     width: 36rem;
@@ -41,17 +44,18 @@ ul{
 }
 
 li:hover{
-    opacity: 50%
+    opacity: 100%;
+    box-shadow: 0 0 25px rgb(0, 0, 0);
 }
 
 .top{
     
-    width: 80px;
+    width: 100px;
     height: 50px;
     margin: 0.2rem;
-    font-family: fantasy;
-    color: aliceblue;
-    font-size: 1.2rem;
+    margin-top: 0.7rem;
+    font-family: Garamond;
+    font-size: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,9 +65,12 @@ li:hover{
 .seta{
     width: 60px;
     height: 60px;
-    background-size: 100%;
+    background-size: 80%;
     float: left;
     background-image: url(../img/setas.webp);
+    background-repeat: no-repeat;
+    justify-content: center;
+    margin-left: 1rem;
 }
 
 .top:hover{
@@ -71,27 +78,21 @@ li:hover{
 }
 
 h1{
-   padding-top: 15rem;
+    padding:15rem 0 0 0;
     font-size: 100px;
     display: flex;
     margin: auto;
     justify-content: center;
-    padding-bottom: 10rem;
     text-transform: uppercase;
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: url(../img/portada.gi);
+    font-family: Garamond;
+    background-image: url(../img/particulas.movs);
     background-size: 100%;
+    background-color: rgb(255, 232, 192);
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
-h2{
-    font-size: 60px;
-    display: flex;
-    margin: auto;
-    justify-content: center;
-    clear: both;
-    padding-bottom: 1rem;
-    font-family: Arial, Helvetica, sans-serif;
-}
+
 
 .texto{
     height: auto;
@@ -105,48 +106,64 @@ h2{
     justify-content: center; 
     margin: auto;
     overflow: hidden;
-    width: 1280px;
+    width: 100%;
+    max-width: 1280px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.presentacion{
-    width: 600px;
-    padding: 20px;
-    color: rgb(0, 0, 0);
-    font-family: Arial, Helvetica, sans-serif;
+.presentacion {
+    font-size: 1rem;
+    width: 100%;
+    padding: 10px;
+    line-height: 1.4;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
+
 
 .foto{
-    width: 640px;
-    height: 20rem; 
+    width: 26rem;
+    height: 23rem; 
     background-image: url(../img/vane.png) ;
     background-size: 60%;
     float: left;
     background-repeat:no-repeat ;
-    
+    background-size: cover;    
+   
 }
 
 .habilidades{
     width: 40rem;
     height: 12.5rem;
     padding: 1.25rem;
-    color: white;
 }
 
 .programa{
-    width: 5rem;
-    height: 5rem;
+    width: 8vw;
+    height: 8vw;
     margin: 0.188rem;
     float: left;
+    background-repeat: no-repeat;
+    max-width: 5rem;
+    max-height: 5rem;
+    min-width: 4rem;
+    min-height: 4rem;
 }
+.programa:hover {
+-webkit-transform: rotateY(180deg);
+-webkit-transform-style: preserve-3d;
+transform: rotateY(180deg);
+transform-style: preserve-3d;}
 
 .descripcion{
     float: left;
     width: 40rem;
     height: 25rem;
-    background-colr: #b6916b;
     border-left: -1rem ;
     border-style: groove;
     border-color: rgb(0, 0, 0);
+    flex:  1 1 300px;
 }
 
 .linea1{
@@ -163,7 +180,9 @@ h2{
     height: 60px;
     justify-content: center;
     text-align: center;
+    padding-top: 10rem;
 }
+
 .app{
     height: 50px;
     width: 50px;
@@ -172,12 +191,12 @@ h2{
 }
 
 .behance{
-    background-image: url(../img/behance.webp);
+    background-image: url(../img/behance.png);
     background-size: 100%;
 }
 
 .artstation{
-background-image: url(../img/artstation.jpg);
+background-image: url(../img/artstation.png);
 background-size: 100%;
 }
 
@@ -185,6 +204,7 @@ background-size: 100%;
 background-image: url(../img/github.png);
 background-size: 100%;
 }
+
 a:link{
     line-height: 10rem;
     color: rgb(255, 255, 255);
@@ -200,12 +220,11 @@ a:visited{
     color: rgb(255, 255, 255);
 }
 .instagram {
-    background-image: url(../img/icono-logotipo-vector-instagram-logotipo-redes-sociales_901408-392.avif);
+    background-image: url(../img/instagram.png);
     background-size: 100%;
 }
-
 .linkedin{
-    background-image: url(../img/LinkedIn_logo_initials.png.webp);
+    background-image: url(../img/LinkedIn_logo_initials.png);
     background-size: 100%;
 }
 .p1{
@@ -221,8 +240,8 @@ a:visited{
     background-size: 100%;
 }
 .p4{
-    background-image: url(../img/adobe-substance-3d-painter-icon-app-logo-editable-transparent-background-premium-social-media-design-for-digital-download-free-png.png);
-    background-size: 00%;
+    background-image: url(../img/substance.png);
+    background-size: 100%;
 }
 .p5{
     background-image: url(../img/Adobe_After_Effects_CC_icon.svg.png);
@@ -245,3 +264,275 @@ a:visited{
     background-image: url(../img/Adobe_Photoshop_CC_icon.svg.png);
     background-size: 100%;
 }
+.horari{
+background-image: url(../img/Captura_Horari.png);
+opacity: 50%;
+background-size:100%;
+}
+
+.feedly{
+background-image: url(../img/Captura_Feedly.png);
+opacity: 50%;
+background-size:100%;
+}
+.watchmen{
+background-image: url(../img/Captura_Watchmen.png);
+opacity: 50%;
+background-size:100%;
+}
+.escacs{
+background-image: url(../img/Captura_Damas.png);
+opacity: 50%;
+background-size:100%;
+}
+.ifpgram{
+background-image: url(../img/Captura_IFPgram.png);
+opacity: 50%;
+background-size:100%;
+}
+.photoshop{
+background-image: url(../img/Captura_Photoshop.png);
+opacity: 50%;
+background-size:100%;
+}
+.floreta{
+background-image: url(../img/Captura_Flor.png);
+opacity: 50%;
+background-size:100%;
+}
+.bus{
+background-image: url(../img/Captura_Horari.png);
+opacity: 50%;
+background-size:50%;
+}
+.progres{
+background-image: url(../img/Captura_Progres.png);
+opacity: 50%;
+background-size:100%;
+}
+.pelys{
+background-image: url(../img/Captura_Pelys.png);
+opacity: 50%;
+background-size:100%;
+}
+
+h2{
+  position:relative;
+  color: #000000;
+  letter-spacing:6px;
+  font-weight:900;
+  font-size:450%;
+  text-align:center;
+  filter: drop-shadow(1px 1px 0px );
+  animation-name:effect-glitch;
+  animation-duration: 2s;
+  animation-iteration-count:infinite;
+  animation-direction: alternate;
+  animation-timing-function:cubic-bezier(4 0.7 2 0.1);
+  clip-path: content-box;
+  font-size: 60px;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  clear: both;
+  padding-bottom: 2rem;
+  font-family: Garamond;
+  padding-top:5rem;
+}
+
+@keyframes effect-glitch{
+  100%{
+    filter: drop-shadow(12px 0px 10px #ffb702);
+  }
+ 
+  0%{
+    filter: drop-shadow(-10px 6px 6px #ffb700);
+  }
+}
+
+li a{
+    opacity: 100%;
+    color: #000000;
+    font-weight: bold;
+   text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px #ffffff, 0 0 80px
+}
+li a:hover{
+    opacity: 100%;
+    color: #000000;
+        font-weight: bold;
+   text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 40px #ffffff, 0 0 80px
+}
+
+li a:visited{
+    opacity: 100%;
+    color: rgb(0, 0, 0);
+   font-weight: bold;
+   text-shadow: 0 0 10px #fbfbfb, 0 0 20px #ffffff, 0 0 40px #ffffff, 0 0 80px
+}
+
+.letras{
+    opacity: 100%;
+}
+
+.correo{
+    font-family: Garamond;
+    font-weight: bold;
+    background-color:  rgb(255, 232, 192);
+    height: 3rem;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+@media (max-width: 1070px) {
+.foto{
+    height: 20rem;
+    width: 20rem;
+    padding-right: 2rem;
+}
+.presentacion{
+          margin-left: 1rem;
+        margin-right: 1rem;
+}
+     }
+
+
+@media (max-width: 900px) {
+    .top {
+        font-size: 0.9rem;
+        width: 80px;
+        height: 45px;
+    }
+
+    .seta {
+        width: 50px;
+        height: 50px;
+        background-size: 75%;
+    }
+
+    .cap {
+        height: 55px;
+    }
+
+
+    .presentacion {
+        font-size: 0.95rem;
+        width: 90%;
+        padding: 10px;
+              margin-left: 1rem;
+        margin-right: 1rem;
+    }
+     .linea1, .linea2{
+        width: 100%;
+        justify-content: center;
+        display:flex;
+    }
+    .programa{
+        float: none;
+    }
+}
+
+@media (max-width: 850px) {
+    h1 {
+        font-size: 48px;
+        padding-top: 8rem;
+    }
+
+    h2 {
+        font-size: 32px;
+        padding-top: 3rem;
+    }
+
+    ul {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    li {
+        width: 8rem;
+        height: 8rem;
+        margin: 0.5rem;
+    }
+    .foto{
+        height: 20rem;
+        width: 20rem;
+    }
+ .linea1, .linea2{
+        width: 100%;
+        justify-content: center;
+        display:flex;
+    }
+    .programa{
+        float: none;
+    }
+  .habilidades{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .presentacion{
+              margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+
+
+}
+
+@media (max-width: 667px) {
+    .top {
+        font-size: 0.75rem;
+        width: 70px;
+        height: 40px;
+        margin: 0.3rem;
+    }
+
+    .seta {
+        width: 40px;
+        height: 40px;
+        background-size: 70%;
+        margin-left: 0.5rem;
+    }
+
+    .cap {
+        height: 50px;
+    }
+    .presentacion {
+        font-size: 0.85rem;
+        width: 100%;
+        padding: 10px;
+        line-height: 1.4;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .descripcion {
+        width: 100%;
+        height: auto;
+        border: none; 
+    }
+    .foto{
+        height: 15rem;
+        width: 15rem;
+    }
+    .habilidades{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .linea1, .linea2{
+        width: 100%;
+        justify-content: center;
+        display:flex;
+    }
+    .programa{
+        float: none;
+    }
+
+}
+
