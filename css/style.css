@@ -533,6 +533,10 @@ li a:visited{
     .programa{
         float: none;
     }
-
+    .java{
+        background-image: url(../img/Unofficial_JavaScript_logo_2.svg.png);
+        background-size: 100%;
+    }
+        
 }
 

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>js02</title>
+</head>
+<body>
+    <script type="text/javascript" language="javascript">
+        // Declaració de variables
+        var mailguardat="vgutierrez@ifp-alguero.org";
+        var passwordguardat="12345"
+
+        //alert("el mail guardat és " + mailguardat);
+
+        // prompt per demanar dades
+       // prompt("Introdueix la contrasenya");
+
+        var mailintroduit=prompt("Escriu el teu mail");
+        var passwordontroduit=prompt("Introdueix la contrasenya");
+
+        // comparar unes dades amb unes altres
+        //&= and
+        if (mailintroduit == mailguardat & passwordontroduit == passwordguardat)
+            {
+                document.write("Correcte");
+             }
+        else{
+            document.write("Incorrecte");
+        }
+    </script>
+</body>
+</html>
